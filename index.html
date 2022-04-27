@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link rel="short icon" type="image/x-ico" href="./img/logoIco.png">
+	<title>Controle Financeiro</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="css/media_queries.css">
+</head>
+
+<body>
+	<!-- Criação do topo e do subtopo com a largura de 1100px -->
+	<header>
+		<div class="container">
+			<!-- Criação do menu e dos conteudos do lado esquerdo e direito, separados por um space-between -->
+			<div class="logo">
+				<img src="img/logo.jpg" alt="logo">
+				<div class="titulo">
+					Controle Financeiro
+				</div>
+			</div>
+
+			<div class="menu">
+				<nav>
+					<ul class="menu-opcoes">
+						<a href="#"><li>Limpar dados</li></a>
+						<span class="linha"></span>
+						<a href="#"><li>Cadastro de transações</li></a>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="menu-lateral">
+				<div class="icon-menu" onclick="abrir_menu()"><img src="img/menu.png"/></div>
+				<div class="barra">	
+					<nav>
+						<div class="icon-fechar" onclick="fechar_menu()"><img src="img/fechar.png"/></div>
+						<a href="#"><div class="link">Cadastro de transações</div></a>
+						<a href="#"><div class="link">Limpar dados</div></a>
+					</nav>	
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main class="conteudo">
+		<div class="container">
+			<!-- Criação do conteudo do lado esquerdo -->
+			<div class="conteudo-esquerdo">
+				<h2>Nova transação</h2>
+				<form id="form" onsubmit="validacao(event)">
+					<div class="transacao">
+						<label for="transacao">Tipo de transação</label>
+						<select id="opcao" required="">
+							<option value="">Selecione o tipo de transação</option>
+							<option value="1">Compra</option>
+							<option value="2">Venda</option>
+						</select>
+					</div>
+					
+					<div class="nome-mercadoria">
+						<label for="nome-mercadoria">Nome da mercadoria</label>
+						<input type="text" id="mercadoria" placeholder="Digite aqui" autocomplete="off" pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$" maxlength="30" required="">
+					</div>
+
+					<div class="valor-mercadoria">
+						<label for="valor-mercadoria">Valor</label>
+						<input type="text"  id="valor" placeholder="R$ 0,00" autocomplete="off" 
+						onkeyup="atacado(this);" 
+						oncopy="return false"
+                		oncut="return false"
+                		onpaste="return false"
+                		required="" />
+					</div>
+
+					<div class="botao-formulario">
+						<button type="submit">Adicionar transação</button>
+					</div>
+				</form>
+			</div>
+
+			<!-- Criação do conteudo do lado direito -->
+			<div class="conteudo-direito">
+				<h2>Extrato de transações</h2>
+
+				<div class="cartegoria">
+					<div>Mercadoria</div>
+					<div>Valor</div>
+				</div>
+				<div id="transacao-vazia">Nenhuma transação cadastrada!</div>
+				<div id="transacoes"></div>
+				<div class="total">
+						<div>Total</div>
+						<div id="total">0.00</div>
+					</div>
+				<div class="resultado">[---]</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+	</footer>
+	<script src="js/script.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>
