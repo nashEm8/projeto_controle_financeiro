@@ -1,8 +1,10 @@
+//Criação do localStorage
+const localStorageTransacoes = JSON.parse(localStorage.getItem('transacoes'));
+let transacoes = localStorage.getItem('transacoes') !== null ? localStorageTransacoes : [];
 
 const transacoesClass = document.querySelector('#transacoes');
 const total_valor = document.querySelector('#total');
 const resultado = document.querySelector('.resultado');
-const transacoes = [];
 
  const transacoesIntoDOM = transacoes =>{
   const operador = transacoes.tipo == 1 ? '-' : '+';
@@ -82,6 +84,34 @@ const balancoValores = () => {
   total_valor.innerHTML = `${total}`; 
 }
 
+//Remover as transações do localStorage 
+function remove_transacoes() {
+  // Testa a quantidade de itens no objStorage
+  if (transacoes.length > 0 && confirm("Tem certeza que deseja limpar os dados?") == true) {
+    document.querySelector('#mercadoria').value = '';
+    document.querySelector('#valor').value = '';
+    document.querySelector('#opcao').value = '';
+    // Remove todos os itens da tabela e do local storage quando clicado
+    for (element of document.querySelectorAll("#transacoes")) {
+      resultado.innerHTML = ''
+      element.remove();
+      transacoes = [];
+      localStorage.clear();
+      updateLocalStorage();
+      document.location.reload(true);
+      init();
+    }
+    /* Apos verificar a quantidade de itens, emite um alert informando que não foi possível remover pois
+    a quantidade é menor ou igual a 0 */
+  } else if (transacoes <= 0) {
+    alert("Não existe nenhuma transação cadastrada!")
+  }
+}
+
+const updateLocalStorage = () => {
+  localStorage.setItem('transacoes', JSON.stringify(transacoes));
+}
+
  const init = () => {
   transacoesClass.innerHTML = '';
   transacoes.forEach(transacoesIntoDOM);
@@ -108,6 +138,7 @@ function validacao(e) {
 
   transacoes.push(transacao); 
   init();
+  updateLocalStorage();
 }
 
 //Não permitir que números sejam digitados no input nome da mercadoria 
