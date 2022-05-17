@@ -10,9 +10,13 @@
 
 
 
+
 Atividades desenvolvidas durante o projeto: 
 
+
 🔹 HTML/CSS:
+
+
 ✅ Desenvolvimento completo do HTML
 
 ✅ Início do desenvolvimento do CSS (versão mobile)
@@ -21,6 +25,8 @@ Atividades desenvolvidas durante o projeto:
 
 
 🔸 Javascript: 
+
+
 ✅ Validação e máscara do formulário
 
 ✅ Registro em local storage e listagem das transações
