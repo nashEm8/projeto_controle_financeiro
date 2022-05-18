@@ -39,4 +39,4 @@
 ✅ Funcionalidade de limpar dados
 
 <br>
-🌐 <b>Link do projeto no Git pages: <a>https://nashem8.github.io/projeto_controle_financeiro/</a></b>
+🌐 <b>Link do projeto no Git pages: <a href="https://nashem8.github.io/projeto_controle_financeiro/">https://nashem8.github.io/projeto_controle_financeiro/</a></b>
