@@ -1,4 +1,4 @@
-# projeto_controle_financeiro_final
+# projeto_controle_financeiro
 <br>
 
 <h2>Objetivo da aplicação:</h2>
@@ -39,4 +39,4 @@
 ✅ Funcionalidade de limpar dados
 
 <br>
-🌐 <b>Link do projeto no Git pages: https://nashem8.github.io/projeto_controle_financeiro_final/</b>
+🌐 <b>Link do projeto no Git pages: <a>https://nashem8.github.io/projeto_controle_financeiro/</a></b>
