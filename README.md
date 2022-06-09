@@ -2,7 +2,8 @@
 <br>
 
 Criação de uma SPA (Single Page Application) seguindo um layout pré-definido. 
-Usando HTML e CSS para criá-lo e deixá-lo responsivo e implementar o javascript para incorporar novas funcionalidades. <br> 
+Usando HTML e CSS para criá-lo e deixá-lo responsivo e implementar o javascript para incorporar novas funcionalidades.
+ <br>  <br> 
 
 <h2>Objetivo da aplicação:</h2>
 <ul>
