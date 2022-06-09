@@ -20,8 +20,11 @@ Usando HTML e CSS para criá-lo e deixá-lo responsivo e implementar o javascrip
   </ul>
 
   <br>
-
-
+ 
+ <p align="center">
+ <img src="https://user-images.githubusercontent.com/101338996/172926461-1a6963f9-8dca-4539-b0de-9dffd831d61f.gif"/>
+ </p>
+<br>
 
 <h2 align="center">Atividades desenvolvidas durante o projeto:</h2> 
 
