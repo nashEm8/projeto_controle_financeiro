@@ -1,6 +1,9 @@
 # projeto_controle_financeiro
 <br>
 
+Criação de uma SPA (Single Page Application) seguindo um layout pré-definido. 
+Usando HTML e CSS para criá-lo e deixá-lo responsivo e implementar o javascript para incorporar as seguintes funcionalidades: 
+
 <h2>Objetivo da aplicação:</h2>
 <ul>
   <li>Incluir transações de compra ou venda de mercadoria.</li>
