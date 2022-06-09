@@ -1,11 +1,12 @@
-# projeto_controle_financeiro
+# <p align="center">Projeto - Controle financeiro</p>
 <br>
 
-Criação de uma SPA (Single Page Application) seguindo um layout pré-definido. 
+☑ Criação de uma SPA (Single Page Application) seguindo um layout pré-definido. 
 Usando HTML e CSS para criá-lo e deixá-lo responsivo e implementar o javascript para incorporar novas funcionalidades.
  <br>  <br> 
+🌐 <b>Link do projeto para visualização: <a href="https://nashem8.github.io/projeto_controle_financeiro/">https://nashem8.github.io/projeto_controle_financeiro/</a></b><br><br><br>
 
-<h2>Objetivo da aplicação:</h2>
+<h2 align="center">Objetivo da aplicação:</h2>
 <ul>
   <li>Incluir transações de compra ou venda de mercadoria.</li>
 
@@ -18,11 +19,11 @@ Usando HTML e CSS para criá-lo e deixá-lo responsivo e implementar o javascrip
   <li>Persistir as transações no Local Storage.</li>
   </ul>
 
-  <br><br>
+  <br>
 
 
 
-<h2>Atividades desenvolvidas durante o projeto:</h2> 
+<h2 align="center">Atividades desenvolvidas durante o projeto:</h2> 
 
 <br>
 
@@ -42,5 +43,3 @@ Usando HTML e CSS para criá-lo e deixá-lo responsivo e implementar o javascrip
 
 ✅ Funcionalidade de limpar dados
 
-<br>
-🌐 <b>Link do projeto no Git pages: <a href="https://nashem8.github.io/projeto_controle_financeiro/">https://nashem8.github.io/projeto_controle_financeiro/</a></b>
